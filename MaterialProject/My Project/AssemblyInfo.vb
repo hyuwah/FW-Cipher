@@ -11,10 +11,10 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("MaterialProject")> 
+<Assembly: AssemblyTitle("FW Cipher")>
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("MaterialProject")> 
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("FW Cipher")>
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(false)>

@@ -10,7 +10,7 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
     Background="{DynamicResource MaterialDesignPaper}"
     FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" 
-        UseLayoutRounding="False" MinHeight="450" Topmost="True" ScrollViewer.CanContentScroll="True">
+        UseLayoutRounding="False" MinHeight="450" Topmost="True">
     <Grid ScrollViewer.CanContentScroll="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="48" />
