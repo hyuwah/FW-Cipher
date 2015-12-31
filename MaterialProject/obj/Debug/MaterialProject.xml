@@ -1,0 +1,132 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MaterialProject
+</name>
+</assembly>
+<members>
+<member name="T:MaterialProject.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:MaterialProject.MainWindow.MainWindow1_Initialized(System.Object,System.EventArgs)">
+ <summary>
+ Inisialisasi MainWindows
+ disable bt_copy dan bt_save
+ </summary>
+ Main Windows
+ Initialization
+ <remarks></remarks>
+</member>
+<member name="M:MaterialProject.MainWindow.bt_encrypt_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ OPERASI TOMBOL ENKRIPSI
+ </summary>
+ bt_encrypt = Encrypt Button
+ Click Event
+</member>
+<member name="M:MaterialProject.MainWindow.bt_decrypt_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ OPERASI TOMBOL DEKRIPSI
+ </summary>
+ bt_decrypt = Decrypt Button
+ Click Event
+</member>
+<member name="M:MaterialProject.MainWindow.bt_reset_Click(System.Object,System.EventArgs)">
+ <summary>
+ OPERASI TOMBOL RESET
+ tb_key = 0, tb_input = "", tb_output = ""
+ </summary>
+ bt_reset = Reset Button
+ Click Event
+</member>
+<member name="M:MaterialProject.MainWindow.bt_paste_Click(System.Object,System.EventArgs)">
+ <summary>
+ OPERASI TOMBOL COPY PASTE
+ I/O ke Clipboard
+ </summary>
+ bt_paste = Paste Button
+ bt_copy = Copy Button
+ Click Event
+</member>
+<member name="M:MaterialProject.MainWindow.bt_keyup_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ OPERASI TOMBOL KEY
+ Increment dan Decrement nilai tb_key
+ </summary>
+ bt_keyup dan bt_keydown
+ Click Event
+ <remarks></remarks>
+</member>
+<member name="M:MaterialProject.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:MaterialProject.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:MaterialProject.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:MaterialProject.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:MaterialProject.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:MaterialProject.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:MaterialProject.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:MaterialProject.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:MaterialProject.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:MaterialProject.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:MaterialProject.MaterialDesignColors.WpfExample.App">
+<summary>
+App
+</summary>
+</member>
+<member name="M:MaterialProject.MaterialDesignColors.WpfExample.App.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:MaterialProject.MaterialDesignColors.WpfExample.App.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+</members>
+</doc>
