@@ -1,5 +1,7 @@
 ﻿Public Class MainWindow
     Dim fw As New fwengine
+    Private OpenFileDialog1 As Object
+    Private SaveFileDialog1 As Object
 
     ''' <summary>
     ''' Inisialisasi MainWindows
@@ -135,5 +137,7 @@
         End If
     End Sub
 
+    Private Sub bt_open_Click(sender As Object, e As RoutedEventArgs) Handles bt_open.Click
 
+    End Sub
 End Class

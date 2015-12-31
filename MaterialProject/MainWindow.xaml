@@ -10,8 +10,8 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
     Background="{DynamicResource MaterialDesignPaper}"
     FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" 
-        UseLayoutRounding="False" MinHeight="450" Topmost="True">
-    <Grid>
+        UseLayoutRounding="False" MinHeight="450" Topmost="True" ScrollViewer.CanContentScroll="True">
+    <Grid ScrollViewer.CanContentScroll="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="48" />
             <RowDefinition Height="*" />
@@ -28,8 +28,9 @@
             <Button x:Name="bt_about" Padding="8">
                 <TextBlock><Run Text="About"/></TextBlock>
             </Button>
+            <Viewbox Height="43" VerticalAlignment="Top" Width="100"/>
         </ToolBar>
-        <Grid Grid.Row="1" Margin="4">
+        <Grid Grid.Row="1" Margin="4" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="128"/>
                 <ColumnDefinition Width="*"/>
@@ -51,38 +52,38 @@
                 </StackPanel>
             </GroupBox>
 
-            <!--<Grid Grid.Column="1" Margin="4">
+            <Grid Grid.Column="1" Margin="4" ScrollViewer.CanContentScroll="True">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>-->
-            <StackPanel Grid.Column="1" Margin="0,0,4,4">
-                <materialDesign:Card Margin="4,4,0,0" Grid.Row="0" Padding="2">
-                    <Grid>
+                    <RowDefinition Height="*" MinHeight="150"/>
+                    <RowDefinition Height="*" MinHeight="150"/>
+                </Grid.RowDefinitions>
+            <!--<StackPanel Grid.Column="1" Margin="0,0,4,4" CanVerticallyScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" CanHorizontallyScroll="True" MinHeight="389" ScrollViewer.CanContentScroll="True" >-->
+                <materialDesign:Card Margin="4,4,4,0" Grid.Row="0" Padding="2" ScrollViewer.CanContentScroll="True">
+                    <Grid ScrollViewer.CanContentScroll="True">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="*" MinHeight="96"/>
-                            <RowDefinition Height="36"/>
+                            <RowDefinition Height="*" MinHeight="72"/>
+                            <RowDefinition Height="Auto" MinHeight="36"/>
                         </Grid.RowDefinitions>
                         <Label Grid.Row="0" Content="Input Text:" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
-                        <TextBox x:Name="tb_input" Margin="4,0,4,4" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap" ToolTip="Masukkan teks yang akan dienkripsi atau didekripsi" VerticalScrollBarVisibility="Auto" />
+                        <TextBox x:Name="tb_input" Margin="4,0,4,4" Grid.Row="1" AcceptsReturn="True" TextWrapping="WrapWithOverflow" ToolTip="Masukkan teks yang akan dienkripsi atau didekripsi" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Left" HorizontalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" MaxHeight="240"/>
                         <Button x:Name="bt_paste" Margin="4,0,4,4" Grid.Row="2" Content="Paste Input" FontWeight="SemiBold" Style="{DynamicResource MaterialDesignFlatButton}"/>
                     </Grid>
                 </materialDesign:Card>
-                <materialDesign:Card Margin="4,4,0,0" Grid.Row="1" Padding="2">
-                    <Grid Grid.Row="1">
+                <materialDesign:Card Margin="4,4,4,0" Grid.Row="1" Padding="2" ScrollViewer.CanContentScroll="True">
+                    <Grid Grid.Row="1" ScrollViewer.CanContentScroll="True">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="*" MinHeight="96"/>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*" MinHeight="72"/>
+                            <RowDefinition Height="Auto" MinHeight="36"/>
                         </Grid.RowDefinitions>
                         <Label Grid.Row="0" Content="Output Text:" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
-                        <TextBox x:Name="tb_output" Margin="4,0,4,4" Grid.Row="1" TextWrapping="Wrap" ToolTip="Hasil teks yang telah dienkripsi atau didekripsi" Cursor="IBeam" IsReadOnly="True" IsUndoEnabled="False" VerticalScrollBarVisibility="Auto"/>
+                        <TextBox x:Name="tb_output" Margin="4,0,4,4" Grid.Row="1" TextWrapping="WrapWithOverflow" ToolTip="Hasil teks yang telah dienkripsi atau didekripsi" Cursor="IBeam" IsReadOnly="True" IsUndoEnabled="False" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Left" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Auto" MaxHeight="240"/>
                         <Button x:Name="bt_copy" Margin="4,0,4,4" Grid.Row="2" Content="Copy Output" Style="{DynamicResource MaterialDesignFlatButton}"/>
                     </Grid>
                 </materialDesign:Card>
-            </StackPanel>
-            <!--</Grid>-->
+            <!--</StackPanel>-->
+            </Grid>
 
         </Grid>
     </Grid>
