@@ -252,3 +252,5 @@ $RECYCLE.BIN/
 .DS_Store
 "MaterialProject.v12.suo" 
 MaterialProject.v12.suo 
+MaterialProject/obj/
+MaterialProject/bin/
